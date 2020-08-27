@@ -6,6 +6,8 @@
   "scripts": {
     "build": "tsc",
     "start": "yarn build && node dist/src/index.js",
+    "lint":"eslint ./src ./test --ext .ts",
+    "lint:fix":"eslint ./src ./test --ext .ts --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "https://github.com/jjotta158/wheater_api_with_typescript.git",
@@ -13,6 +15,9 @@
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^14.6.1",
+    "@typescript-eslint/eslint-plugin": "^3.10.1",
+    "@typescript-eslint/parser": "^3.10.1",
+    "eslint": "^7.7.0",
     "typescript": "^4.0.2"
   },
   "dependencies": {
